@@ -1,18 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bonnus.com.demobonnussdk.MainActivity">
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Pago de TDC"
+        android:onClick="process"
+        android:tag="Pago de TDC"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:tag="Login"
+        android:onClick="process"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Saldos"
+        android:tag="Saldos"
+        android:onClick="process"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Transferencia"
+        android:tag="Transferencia"
+        android:onClick="process"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="5dp"
+        android:background="#00ffffff"
+        android:text="Otras funciones"
+        android:gravity="center"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Ver recompensas"
+        android:onClick="recompensas"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Carrier :" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Maker: " />
+
+
+</LinearLayout>
