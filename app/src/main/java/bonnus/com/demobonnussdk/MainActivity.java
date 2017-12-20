@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Se hace esta llamada para hacer setup del SDK. Se debe hacer solo una vez cada que corra la app
         Bonnus.getInstance().initWithCredentials(getApplicationContext(),
-                "E5uL2TCGweNnbn0FayON74jkkffA1PwI",
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik1qUTFNVVJEUVVWRlEwUXpRekl3TXpNek9EVkROa1ZHUkRKRk16Y3lSREU1UWtNelJrTkNRUSJ9.eyJpc3MiOiJodHRwczovL3ZhbG1hbnMuYXV0aDAuY29tLyIsInN1YiI6InhTYzdraFBPdE8xMFMzUG0xMlFTRHM4R3JvOVNuZWJnQGNsaWVudHMiLCJhdWQiOiJodHRwOi8vYm9ubnVzYXBpLmF6dXJld2Vic2l0ZXMubmV0L2FwaSIsImlhdCI6MTUxMTQwNDI0MCwiZXhwIjoxNTI2OTU2MjQwLCJzY29wZSI6Im9wZW5pZDpwcm9maWxlOmVtYWlsIG9wZW5pZCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.UQtiSqK2gwBS2EA-vYjPK3941BZe5u-eEeyGRraWO5XMo_kz8e1f92q1I9giqXyhM1FfMCSV-bSdKW8Rvaw3M-J7tqMW_yx0y20YkJj5-rUiWjNBW5PG_7wgNqIDdDXjgIPp2Sid9O0-u5uS5iOn03l9cEfM75kMGjqoPDoFHURb2QOKeXXUzqqJR7Ax3BhSEn4cZBda_JbgTeC-9JC6CeBVLkv8-r463t7IUkrfC44iEKEH27eW3_9fGN_RWUB9pwOYf-APyMKYXEDx0MEOiG1brkNWvfG_1r0ot9z1O_5aodXyhHd22UpllVVlzQNCKmU2hvhSc8nGJcDiLnvS_w",
-                "51b30e60eab944eabac3d91e04fb006f");
+                "PartnerId",
+                "Token",
+                "SDKid");
 
         TelephonyManager manager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
         String carrierName = manager.getNetworkOperatorName();
