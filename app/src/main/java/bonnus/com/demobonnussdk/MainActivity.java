@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         carrierView.setText("Carrier: "+carrierName);
         manufacturerView.setText("Manufactured: "+manufacturer);
 
+
+        //Esta linea solo se necesita hacer una vez, después del login.
+        Bonnus.getInstance().updateDataFromServer();
+
     }
 
     public void onResume(){

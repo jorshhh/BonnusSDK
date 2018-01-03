@@ -25,12 +25,16 @@ Una vez que eso esta hecho, debemos asegurarnos que haya los siguientes permisos
 
 Para usar el SDK, tenemos que instanciarlo una vez cada vez que la aplicación abra:
 
-
-
      Bonnus.getInstance().initWithCredentials(getApplicationContext(),
                 "ParnerId",
                 "token",
                 "sdkId");
+
+Las recompensas disponibles deben bajarse por lo menos una vez. Se recomienda después de que el usuario haga login.
+Se puede actualizar todas las veces que sea necesario.
+
+        Bonnus.getInstance().readRemoteData();
+
 
 En la actividad en la que queramos mandar acciones y mostrar popups tenemos que hacer lo siguiente:
 
@@ -40,8 +44,8 @@ En la actividad en la que queramos mandar acciones y mostrar popups tenemos que 
         Bonnus.getInstance().registerActivityForPopup(topView, MainActivity.this);
     }
 
-    public void onStop(){
-        super.onStop();
+    public void onPause(){
+        super.onPause();
         Bonnus.getInstance().unregisterActivityForPopup();
     }
 

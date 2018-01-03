@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DemoBonnusSDK.iml" filepath="$PROJECT_DIR$/DemoBonnusSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BonnusSDK.iml" filepath="$PROJECT_DIR$/BonnusSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
