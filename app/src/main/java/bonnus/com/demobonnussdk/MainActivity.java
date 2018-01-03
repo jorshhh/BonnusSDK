@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         Bonnus.getInstance().registerActivityForPopup(topView, MainActivity.this);
     }
 
-    public void onStop(){
-        super.onStop();
+    public void onPause(){
+        super.onPause();
 
         //Esto se debe hacer cada vez que salgamos de una actividad registrada
         Bonnus.getInstance().unregisterActivityForPopup();
