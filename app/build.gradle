@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile ('mx.aidc.bonnussdk:bonnus-sdk:1.0.3@aar'){
+    compile ('mx.aidc.bonnussdk:bonnus-sdk:1.0.4@aar'){
         transitive=true
     }
     implementation fileTree(dir: 'libs', include: ['*.jar'])
