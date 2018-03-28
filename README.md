@@ -15,7 +15,7 @@ Primero hay que agregar el repositorio de maven en el build.gradle a nivel proye
 
 Para agregar el SDK, lo incluimos en nuestro build.gradle a nivel modulo de la siguiente manera:
 
-    compile ('mx.aidc.bonnussdk:bonnus-sdk:1.0.6@aar'){
+    compile ('mx.aidc.bonnussdk:bonnus-sdk:1.0.8@aar'){
         transitive=true
     }
 
